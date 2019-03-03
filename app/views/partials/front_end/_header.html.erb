@@ -1,0 +1,32 @@
+<!-- Header
+============================================= -->
+<header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+  <div id="header-wrap">
+    <div class="container clearfix">
+      <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+      <!-- Logo
+      ============================================= -->
+      <div id="logo">
+        <a href="index.html" class="standard-logo" data-dark-logo="<%= image_path('logo-dark.png') %>"><%= image_tag("logo.png", alt: "Logo") %></a>
+        <a href="index.html" class="retina-logo" data-dark-logo="<%= image_path('logo-dark@2x.png') %>"><%= image_tag("logo@2x.png", alt: "Logo") %></a>
+      </div>
+
+      <!-- Primary Navigation
+      ============================================= -->
+      <nav id="primary-menu" class="dark">
+        <ul>
+          <li class="current"><a href="index.html"><div>Home</div></a></li>
+          <li><a href="services.html"><div>Services</div></a></li>
+          <li><a href="about-us.html"><div>About Us</div></a></li>
+          <li class="mega-menu"><a href="careers.html"><div>Careers</div></a></li>
+          <li><a href="blog.html"><div>Blogs</div></a></li>
+          <li><a href="contact-us.html"><div>Contact Us</div></a></li>
+        </ul>
+
+        <div id="top-search">
+          <a href="#" id="top-search-trigger"><%= image_tag("icons/flags/ja.png", alt: "JP") %></a>
+        </div>
+      </nav><!-- #primary-menu end -->
+    </div>
+  </div>
+</header><!-- #header end -->

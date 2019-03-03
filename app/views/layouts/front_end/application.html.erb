@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<html lang="jp">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Lorem Ipsum Viet Nam</title>
+    <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+    <%= stylesheet_link_tag    'front_end/application', media: 'all', 'data-turbolinks-track': 'reload' %>
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body class="stretched">
+    <div id="wrapper" class="clearfix">
+      <%= render 'partials/front_end/header' %>
+      <%= render 'partials/front_end/slider' %>
+
+      <section id="content">
+        <div class="content-wrap">
+          <%= yield %>
+        </div>
+      </section><!-- #content end -->
+
+      <%= render 'partials/front_end/footer' %>
+    </div>
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <%= javascript_include_tag 'front_end/application', 'data-turbolinks-track': 'reload' %>
+  </body>
+</html>
