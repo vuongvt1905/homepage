@@ -3,14 +3,14 @@
   max-width: 1000px;
 }
 .slide-background-first {
-  background-image: url('images/slider/swiper/10.jpg');
+  background-image: url('./images/slider/swiper/10.jpg');
 }
 .slide-background-second {
-  background-image: url('images/slider/swiper/11.jpg');
+  background-image: url('./images/slider/swiper/11.jpg');
   background-position: center top;
 }
 .footer-address-background {
-  background-image: url('images/world-map.png');
+  background-image: url('./images/world-map.png');
   background-position: center center;
 	background-repeat: no-repeat;
   background-size: 100%;
