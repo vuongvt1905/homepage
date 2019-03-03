@@ -10,7 +10,7 @@
   background-position: center top;
 }
 .footer-address-background {
-  background-image: url('./images/world-map.png');
+  background-image: image-url('world-map.png');
   background-position: center center;
 	background-repeat: no-repeat;
   background-size: 100%;
