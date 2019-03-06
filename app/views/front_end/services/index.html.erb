@@ -6,8 +6,7 @@
       <h1>Services</h1>
       <span>We provide Amazing Solutions</span>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+        <li class="breadcrumb-item"><%= link_to "Home", root_path %></li>
         <li class="breadcrumb-item active" aria-current="page">Services</li>
       </ol>
     </div>
@@ -208,15 +207,9 @@
     </div>
 
     <ul class="clients-grid grid-6 nobottommargin clearfix">
-      <li>
-        <a href="http://logofury.com/logo/enzo.html"><%= image_tag("clients/1.png", alt: "Clients") %></a>
-      </li>
-      <li>
-        <a href="http://logofury.com"><%= image_tag("clients/2.png", alt: "Clients") %></a>
-      </li>
-      <li>
-        <a href="http://logofaves.com/2014/03/grabbt/"><%= image_tag("clients/3.png", alt: "Clients") %></a>
-      </li>
+      <li><a href="http://logofury.com/logo/enzo.html"><%= image_tag("clients/1.png", alt: "Clients") %></a></li>
+      <li><a href="http://logofury.com"><%= image_tag("clients/2.png", alt: "Clients") %></a></li>
+      <li><a href="http://logofaves.com/2014/03/grabbt/"><%= image_tag("clients/3.png", alt: "Clients") %></a></li>
       <li><a href="http://logofaves.com/2014/01/ladera-granola/"><%= image_tag("clients/4.png", alt: "Clients") %></a></li>
       <li><a href="http://logofaves.com/2014/02/hershel-farms/"><%= image_tag("clients/5.png", alt: "Clients") %></a></li>
       <li><a href="http://logofury.com/logo/food-fight-radio.html"><%= image_tag("clients/6.png", alt: "Clients") %></a></li>
@@ -231,9 +224,7 @@
   </div>
 
   <div class="section footer-stick">
-
     <h4 class="uppercase center">What <span>Clients</span> Say?</h4>
-
     <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
       <div class="flexslider">
         <div class="slider-wrap">

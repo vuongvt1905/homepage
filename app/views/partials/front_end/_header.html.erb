@@ -15,10 +15,10 @@
         <ul>
           <li class="<%= current_class?(root_path) %>"><%= link_to "Home", root_path %></li>
           <li class="<%= current_class?(services_path) %>"><%= link_to "Service", services_path %></li>
-          <li><a href="about-us.html"><div>About Us</div></a></li>
-          <li><a href="careers.html"><div>Careers</div></a></li>
-          <li><a href="blog.html"><div>Blogs</div></a></li>
-          <li><a href="contact-us.html"><div>Contact Us</div></a></li>
+          <li class="<%= current_class?(about_us_path) %>"><%= link_to "About Us", about_us_path %></li>
+          <li class="<%= current_class?(careers_path) %>"><%= link_to "Careers", careers_path %></li>
+          <li class="<%= current_class?(blogs_path) %>"><%= link_to "Blogs", blogs_path %></li>
+          <li class="<%= current_class?(contact_us_path) %>"><%= link_to "Contact Us", contact_us_path %></li>
         </ul>
 
         <div id="top-search">

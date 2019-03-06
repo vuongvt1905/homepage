@@ -12,11 +12,6 @@ module ApplicationHelper
   end
 
   def current_class?(active_path)
-    Rails.logger.info("++++++++++")
-    Rails.logger.info(request.path)
-    Rails.logger.info("++++++++++")
-    Rails.logger.info(active_path)
-    Rails.logger.info("++++++++++")
     request.path == active_path ? 'current' : nil
   end
 end

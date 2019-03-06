@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :services, only: %i(index)
     resources :about_us, only: %i(index)
     resources :careers, only: %i(index)
+    resources :blogs, only: %i(index show)
     resources :contact_us, only: %i(index)
   end
 end
