@@ -11,13 +11,16 @@
  * It is generally better to create a new file per style scope.
  *
  *= require front_end/bootstrap.css
- *= require front_end/style.css
+ *= require front_end/style.scss
  *= require front_end/swiper.css
- *= require front_end/dark.css
- *= require front_end/font-icons.css
+ *= require front_end/dark.scss
+ *= require front_end/font-icons.scss
  *= require front_end/animate.css
- *= require front_end/magnific-popup.css
- *= require front_end/responsive.css
+ *= require front_end/magnific-popup.scss
+ *= require front_end/responsive.scss
+ *= require front_end/custom-index.scss
+ *= require front_end/about-us.scss
+ *= require front_end/custom-services.scss
  *= require_tree .
  *= require_self
  */
