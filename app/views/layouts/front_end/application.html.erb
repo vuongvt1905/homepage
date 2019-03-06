@@ -8,7 +8,9 @@
     <%= csrf_meta_tags %>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
-    <%= stylesheet_link_tag    'front_end/application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'front_end/application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= yield :page_css %>
  
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -16,7 +18,7 @@
   <body class="stretched">
     <div id="wrapper" class="clearfix">
       <%= render 'partials/front_end/header' %>
-      <%= render 'partials/front_end/slider' %>
+      <%= yield :slider %>
 
       <section id="content">
         <div class="content-wrap">

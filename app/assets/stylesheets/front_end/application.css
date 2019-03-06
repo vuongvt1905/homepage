@@ -18,7 +18,6 @@
  *= require front_end/animate.css
  *= require front_end/magnific-popup.css
  *= require front_end/responsive.css
- *= require front_end/custom-index.css
  *= require_tree .
  *= require_self
  */

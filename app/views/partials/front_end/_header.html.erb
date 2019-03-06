@@ -1,6 +1,4 @@
-<!-- Header
-============================================= -->
-<header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+<header id="header" class="<%= header_class(request.original_url) %> full-header" data-sticky-class="not-dark">
   <div id="header-wrap">
     <div class="container clearfix">
       <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
@@ -15,10 +13,10 @@
       ============================================= -->
       <nav id="primary-menu" class="dark">
         <ul>
-          <li class="current"><a href="index.html"><div>Home</div></a></li>
-          <li><a href="services.html"><div>Services</div></a></li>
+          <li class="<%= current_class?(root_path) %>"><%= link_to "Home", root_path %></li>
+          <li class="<%= current_class?(services_path) %>"><%= link_to "Service", services_path %></li>
           <li><a href="about-us.html"><div>About Us</div></a></li>
-          <li class="mega-menu"><a href="careers.html"><div>Careers</div></a></li>
+          <li><a href="careers.html"><div>Careers</div></a></li>
           <li><a href="blog.html"><div>Blogs</div></a></li>
           <li><a href="contact-us.html"><div>Contact Us</div></a></li>
         </ul>
